@@ -36,6 +36,14 @@ pip install -r requirements.txt
 python app.py
 ```
 
+## Automated checks
+
+Core employee-ID extraction and safe output-path behavior are covered by unit tests. GitHub Actions runs them on every push and pull request.
+
+```powershell
+python -m unittest discover -s tests -v
+```
+
 Outlook integration requires Windows and the classic Microsoft Outlook desktop client.
 
 ## Privacy and safety
